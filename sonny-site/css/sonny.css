@@ -1,0 +1,525 @@
+* {
+	/*font-family: courier;*/
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	font-size: 20px;
+
+}
+
+
+body.index {
+	background-image: url("../imgs/pic10_web.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+    font-family: CooperHewitt-Heavy,sans-serif;
+}
+
+body.videos {
+	background-image: url("../imgs/more_videos_background.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+    font-family: CooperHewitt-Heavy,sans-serif;
+}
+
+body.news{
+	background-image: url("../imgs/news_background.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+    font-family: CooperHewitt-Heavy,sans-serif;
+}
+
+    @media only screen and (min-width: 1024px) {
+	body.videos {
+	    -ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	    -ms-flex-align: center;
+	    align-items: center;
+	}
+
+
+/*body, html {
+  height: 100%%;
+}
+*/
+
+
+/** LAYOUT **/
+
+@media only screen and (min-width: 1024px) {
+	.music
+}
+
+.music {
+	overflow: auto;
+}
+
+.music {
+	overflow: auto;
+}
+
+#feature, footer {
+	margin: 1%;
+}	
+
+
+footer {
+	padding: 5px 0;
+}
+
+#feature, article {
+	height: 500px;
+	margin-bottom: 10%;
+	background-color: none;
+	align-content:center;
+}
+
+
+/** NAVIGATON **/
+
+	.mainNav {
+	background-color: white;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	text-align: center;
+	margin: 0;
+	border: solid black 3px;
+
+	}
+
+	.mainNav a {
+	font-size: 24px;
+	color: black;
+	padding: 10px;
+	text-decoration: none;
+	display: inline-block;
+
+	}
+
+	.mainNav a:hover {
+	background-color: tomato;
+	color: white;
+
+
+	}
+
+	
+	.mainNav .icon {
+	display: none;
+
+	}
+
+
+
+	}
+
+/** Navigation MEDIA QUERY **/
+
+@media screen and (max-width: 600px) {
+	.mainNav a {display: none;}
+	.mainNav a.icon{display: block; float: right;}
+	.mainNav { border: none; }
+
+}
+
+@media screen and (max-width: 600px) {
+	.mainNav.responsive {position: relative;}
+	.mainNav.responsive .icon {position: absolute;
+		top: 0;
+		right: 0;}
+
+	.mainNav.responsive a {
+		display: block;
+		text-align: center;
+	}
+}
+
+/*Headers*/
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.container1 {
+	width: 10%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.container_about_sonny {
+	margin: 0 auto;
+	background-image: url("../imgs/aboutmepage.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.heading{
+	font-size: 35px;
+	font-weight: bold;
+}
+
+
+.text_container {
+	background-color: white;
+	padding: 20px 40px;
+}
+
+.text_container_shadow {
+	background-color: white;
+	padding: 20px 40px;
+	box-shadow: 10px 0px 10px black;
+}
+
+.SonnyHeader_img, .about_sonny_img, .tour_img, .music_img, .video_img, .photos_img{
+  position: relative;
+  opacity: 0.65; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed ;
+
+}
+
+
+.SonnyHeader_img {
+	background-image: url("../imgs/SonnyHeader.png");
+	min-height: 200px;
+}
+	
+
+.about_sonny_img {
+	background-image: url("../imgs/aboutmepage.png");
+	min-height: 400px;
+}
+
+.tour_img {
+	background-image: url("../imgs/strummingguitar.png");
+	min-height: 400px;
+}
+
+.music_img {
+	background-image: url("../imgs/singing_black_white.png");
+	min-height: 400px;	
+}
+
+.video_img{
+	background-image: url("../imgs/pic4.png");
+	min-height: 400px;
+}
+
+.photos_img{
+	background-image: url("../imgs/art_photos.png");
+	min-height: 400px;
+
+
+}
+
+/* Layout */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.collapsing-column-right {
+  flex: 25%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.collapsing-column-left {
+  flex: 25%;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+}
+
+.more {
+ border: solid black 2px;
+ border-radius: 25px;
+ font-size: 12px;
+ color: black;
+ line-height: 1;
+ text-transform: uppercase;
+ background: #f0e9b3;
+ color: #fffef9;
+ display: flex;
+ justify-content: flex-end;
+ padding: 10px 10px;
+ color: black;
+}
+
+
+ .more a:hover {
+	color: tomato;
+	cursor: pointer;
+}
+
+button:focus {outline:0;}
+
+
+/* Tour */
+
+.event-list-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 30px 0;
+    width: 100%;
+    background: rgba(255,254,249,.2);
+}
+
+.event-list-item-date {
+/*    font-family: CooperHewitt-Heavy,sans-serif;
+*/  font-weight: 400;
+    background: #f0e9b3;
+    color: tomato;
+    text-transform: uppercase;
+    text-align: center;
+    height: 118px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.event-list-item-date-day {
+    font-size: 2.625em;
+    line-height: 1;
+    margin-top: .22em;
+}
+
+.event-list-item-date-month, .event-list-item-date-year {
+    font-size: 1.0625em;
+    line-height: 1;
+}
+
+.event-list-item-location .heading, .event-list-item-location .section-banner, .event-list-item-location .section-banner h3, .event-list-item-venue .heading, .event-list-item-venue .section-banner, .event-list-item-venue .section-banner h3, .section-banner .event-list-item-location h3, .section-banner .event-list-item-venue h3 {
+    color: tomato;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.event-list-item-actions .btn-t-default, .event-list-item-actions .section-header-nav-item>a {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.heading {
+	box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.event-list-item-actions {
+    min-width: 140px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    line-height: 1;
+    text-decoration: none;
+    word-break: normal;
+    text-shadow: inherit;
+    text-align: center;
+}
+
+.btn, .btn span {
+    display: inline-block;
+}
+
+.btn-t-default, .section-header-nav-item>a {
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    background: tomato;
+    color: #fffef9;
+    padding: 14px 30px 10px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.event-list-item {
+	    -ms-flex-flow: row wrap;
+	    flex-flow: row wrap;
+	    -ms-flex-align: center;
+	    align-items: center;
+	}
+
+	.event-list-item-date {
+	    -ms-flex-preferred-size: 118px;
+	    flex-basis: 118px;
+	}
+
+	.event-list-item-location {
+	    -ms-flex-preferred-size: 380px;
+	    flex-basis: 380px;
+	    padding: 0 30px;
+	}
+
+	.event-list-item-venue {
+	    -ms-flex: 1;
+	    flex: 1;
+	    padding-right: 15px;
+	}
+
+	.event-list-item-actions {
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	    -ms-flex-pack: center;
+	    justify-content: center;
+	}
+
+	.event-list-item-actions .event-mobile-more-info {
+	    display: none;
+	}
+
+	.event-list-item-actions .btn-t-default, .event-list-item-actions .section-header-nav-item>a {
+	    width: 100%;
+	}
+
+	.event-list-item-actions .btn-t-default+.btn-t-default, .event-list-item-actions .section-header-nav-item>.btn-t-default+a, .event-list-item-actions .section-header-nav-item>a+.btn-t-default, .event-list-item-actions .section-header-nav-item>a+a {
+	    margin-top: 2px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.event-list-item-location {
+	    padding: 30px 30px 5px;
+	}
+
+	.event-list-item-venue {
+	    padding: 5px 30px 30px;
+	}
+
+	.event-list-item-location, .event-list-item-venue {
+	    text-align: center;
+	}
+
+	.event-list-item-actions .btn-t-default, .event-list-item-actions .section-header-nav-item>a {
+	    -ms-flex: 1;
+	    flex: 1;
+	    white-space: nowrap;
+	}
+
+	.event-list-item-venue .btn-t-link, .event-list-item-venue .page-header-section-back {
+	    display: none;
+	}
+}
+
+/*images/videos*/
+
+.news_image {
+	/*max-width: 55%;*/
+	border-radius: 25px;
+	border: 4px solid black;
+	max-width: 100%;
+
+}
+
+.image1 {
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: none;
+	background-image:none;
+}
+
+.image2 {
+	display: block;
+	max-width: 200px;
+	max-height: 100px;
+	margin: auto;text-align: 
+}
+
+.videos_background{
+	background-image: url("../imgs/more_videos_background.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0;
+	position:relative;
+}
+
+.slideshow1{
+	display:block;
+	width: 50%;
+	margin:auto;
+	border: solid black 3px;
+}
+
+.padding-20 {
+	height: 20px;
+}
+
+.tape {
+	position: absolute;
+    width: 100%;
+    margin-top: -60px;
+}
+
+.youtube_videos{
+	position: absolute;
+    width: 100%;
+    margin-top: 350px;
+    
+    }
+
+
+.youtube_videos_inside{
+	position: absolute;
+    width: 100%;
+    margin-top: 525px;
+ 
+}
+
+
+
+/** PARALLAX **/
+
+.parallax { 
+  background-image: url("../imgs/pic10_web");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size:36px
+}
+
+
+

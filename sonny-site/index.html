@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Sonny and the Sunsets</title>
+
+    <link rel="stylesheet" type="text/css" href="css/sonny.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="index">
+
+    <!--Header-->
+
+    <h1><img src="imgs/SonnyHeader.png" class="image1"> </h1>
+
+    <!--Navigation Bar-->
+    <nav class="mainNav" id="responsiveNav">
+        <a href="#about_sonny_label">about</a>
+        <a href="#news_label">news</a>
+        <a href="#tour_label">tour</a>
+        <a href="#music_label">music</a>
+        <a href="#video_label">video</a>
+        <a href="#photos_label">photos</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+
+    <div id="about_sonny_label"> </div>
+
+    <!-- Slide Show -->
+    <section>
+        <br>
+        <img class="slideshow1" src="imgs/pic9.png">
+        <img class="slideshow1" src="imgs/pic14.png">
+        <img class="slideshow1" src="imgs/pic1.png">
+        <img class="slideshow1" src="imgs/pic5.png">
+        <img class="slideshow1" src="imgs/pic6.png">
+        <img class="slideshow1" src="imgs/pic8.png">
+        <img class="slideshow1" src="imgs/pic7.png">
+        <br>
+    </section>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("slideshow1");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
+        }
+    </script>
+
+    <!-- About Sonny  -->
+
+    <div class="text_container">
+
+        <h1>
+        	<img src="imgs/about_sonny_label.png" class="image2"> 
+        </h1>
+
+        <p>
+            Sonny & the Sunsets are a beautiful West Coast thing. Birthed from the sand, the surf, and twilight campfires down in Ocean Beach, Sonny & the Sunsets' busted beach-pop songs spark recollections of doo wop's otherworldly despair, a dose of goofball humor from the Michael Hurley school, and positive possibilities exuded by Jonathan Richman.
+        </p>
+
+        <p>
+            Helmed by the singer/songwriter, playwright, author and onetime troubadour, Sonny Smith, The Sunsets have featured a revolving door lineup that have included Shayde Sartin, Ryan Browne, Kelley Stolz and Tahlia Harbour. Adopting a range of sounds, Smith's sardonic, laid-back style is interwoven throughout his compelling songwriting and vocals.
+        </p>
+
+    </div>
+
+    <div class="about_sonny_img"></div>
+
+    <!-- News -->
+
+    <h1 class="tape">
+       	<img src="imgs/news_label.png" class="image2"> 
+    </h1>
+    <div class="text_container_shadow"> <div id="news_label"> </div>
+        <!-- April 1st -->
+        <div class="row">
+            <div class="column"></div>
+            <div class="column">
+                <h2>April 1st, 2019</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="imgs/tour_dates.png" class="news_image">
+            </div>
+            <div class="column">
+                <p>
+                    North American tour along the west coast. Come join and dance the night away at a city neaaar you! Were hittin our favorite spots such as The Chapel in San Francisco and the Bell House in Brooklyn, New York.
+                </p>
+            </div>
+        </div>
+
+        <!-- February 21st -->
+
+        <div class="row">
+            <div class="column"></div>
+            <div class="column">
+                <h2>April 15th, 2019</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="imgs/april_15_2019_news.png" class="news_image">
+            </div>
+            <div class="column">
+                <p>
+                    We started a record label. Rocks in Your Head Records, named after a record shop I used to spend time in, in New York two decades ago that uplifted me in a way only old record stores can. The first release will be a Sunsets record, Hairdressers from Heaven. After this comp of bands i am producing. so many good bands in SF now. here are some of the bands i want to produce and put out on a compilation: Galore Blue Ocean Pre School Tony Jay April Magazine Bozmo and more records, more bands…….!
+                </p>
+            </div>
+        </div>
+
+        <div align="right">
+	        <button onclick="window.location.href = 'news.html';" class="more" align="right">
+	        	more news
+	        </button>
+	    </div>
+    </div>
+
+    <!-- Tour -->
+
+    <div class="tour_img"></div>
+    <div id="tour_label"> </div>
+
+    <h1 class="tape">
+    	<img src="imgs/tour_label.png" class="image2"> 
+    </h1>
+    <div class="text_container_shadow">
+        <!-- May 16th -->
+
+        <div class="event-list-item">
+            <a class="event-list-item-date">
+                <div class="event-list-item-date-month">May</div>
+                <div class="event-list-item-date-day">16</div>
+            </a>
+            <div class="event-list-item-location">
+                <h4 class="heading">
+					San Francisco, CA
+				</h4>
+            </div>
+            <div class="event-list-item-venue">
+                <div class="heading">
+                    The Chapel
+                </div>
+                <button type="button" class="btn btn-t-link js-expand-event-list-item">More Info</button>
+            </div>
+            <div class="event-list-item-actions">
+                <a class="btn btn-t-default event-mobile-more-info">More Info</a>
+
+                <a class="btn btn-t-default">Tickets</a>
+            </div>
+        </div>
+
+        <!-- May 17th -->
+
+        <div class="event-list-item">
+            <a class="event-list-item-date">
+                <div class="event-list-item-date-month">May</div>
+                <div class="event-list-item-date-day">17</div>
+            </a>
+            <div class="event-list-item-location">
+                <h4 class="heading">
+					Soquel, CA
+				</h4>
+            </div>
+            <div class="event-list-item-venue">
+                <div class="heading">
+                    Michaels on Main
+                </div>
+                <button type="button" class="btn btn-t-link js-expand-event-list-item">More Info</button>
+            </div>
+            <div class="event-list-item-actions">
+                <a class="btn btn-t-default event-mobile-more-info">More Info</a>
+
+                <a class="btn btn-t-default">Tickets</a>
+
+            </div>
+        </div>
+
+		<!-- May 18th -->
+
+        <div class="event-list-item">
+            <a class="event-list-item-date">
+                <div class="event-list-item-date-month">May</div>
+                <div class="event-list-item-date-day">18</div>
+            </a>
+            <div class="event-list-item-location">
+                <h4 class="heading">
+					Big Sur, CA
+				</h4>
+            </div>
+            <div class="event-list-item-venue">
+                <div class="heading">
+                    Hipnic XI
+                </div>
+                <button type="button" class="btn btn-t-link js-expand-event-list-item">More Info</button>
+            </div>
+            <div class="event-list-item-actions">
+                <a class="btn btn-t-default event-mobile-more-info">More Info</a>
+
+                <a class="btn btn-t-default">Tickets</a>
+            </div>
+        </div>
+
+         <!-- May 23rd -->
+        <div class="event-list-item">
+            <a class="event-list-item-date">
+                <div class="event-list-item-date-month">May</div>
+                <div class="event-list-item-date-day">23</div>
+            </a>
+            <div class="event-list-item-location">
+                <h4 class="heading">
+					Los Angeles, Ca
+				</h4>
+            </div>
+            <div class="event-list-item-venue">
+                <div class="heading">
+                    Zebulion
+                </div>
+                <button type="button" class="btn btn-t-link js-expand-event-list-item">Tickets</button>
+            </div>
+            <div class="event-list-item-actions">
+                <a class="btn btn-t-default event-mobile-more-info">More Info</a>
+
+                <a class="btn btn-t-default">Tickets</a>
+            </div>
+        </div>
+
+        <div align="right">
+	        <button onclick="window.location.href = 'tour.html';" class="more">
+	        	more dates
+	        </button>
+	    </div>
+    </div>
+
+
+    <!-- Music -->
+
+    <div class="music_img"></div>
+    <div id="music_label"> </div>
+
+    <h1 class="tape">
+		<img src="imgs/music_label.png" class="image2"> 
+	</h1>
+
+    <div class="text_container_shadow">
+    	<div class="padding-20"></div>
+        <div class="music">
+        	<center>
+
+        	<div class="row">
+        		<div class="collapsing-column-left">
+      				<iframe style="border: 4px solid black; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=4041935066/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sonnyandthesunsets.bandcamp.com/album/hairdressers-from-heaven">Hairdressers From Heaven by Sonny &amp; The Sunsets</a></iframe>
+        		</div>
+        		<div class="collapsing-column-right">
+        			<iframe style="border: 4px solid black; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3192328680/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sonnyandthesunsets.bandcamp.com/album/moods-baby-moods">Moods Baby Moods by Sonny &amp; The Sunsets</a></iframe>
+        		</div>
+        	</div>
+        	<div class="padding-20"></div>
+
+        	<div class="row">
+        		<div class="collapsing-column-left">
+      				<iframe style="border: 4px solid black; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=4066498060/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sonnyandthesunsets.bandcamp.com/album/talent-night-at-the-ashram">Talent Night at the Ashram by Sonny &amp; The Sunsets</a></iframe>
+        		</div>
+        		<div class="collapsing-column-right">
+        			<iframe style="border: 4px solid black; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=846767841/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sonnyandthesunsets.bandcamp.com/album/antenna-to-the-afterworld">Antenna to the Afterworld by Sonny &amp; The Sunsets</a></iframe>
+        		</div>
+        	</div>
+        	<div class="padding-20"></div>
+
+        	<div class="row">
+        		<div class="collapsing-column-left">
+                	<iframe style="border: 4px solid black; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=1976266323/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sonnyandthesunsets.bandcamp.com/album/hit-after-hit">Hit After Hit by Sonny &amp; The Sunsets</a></iframe>        		
+            	</div>
+        		<div class="collapsing-column-right">
+	                <iframe style="border: 4px solid black; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=3270555973/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="http://sonnyandthesunsets.bandcamp.com/album/tomorrow-is-alright">Tomorrow Is Alright by Sonny &amp; The Sunsets</a></iframe>
+        		</div>
+        	</div>
+        </div>
+	    </center>
+
+    <!-- Music Videos -->
+
+    <div class="video_img"></div>
+    <div id="video_label"> </div>
+
+    <h1 class="tape">
+		<img src="imgs/music_videos_label.png" class="image2"> 
+	</h1>
+    <div class="text_container_shadow">
+    	<div class="padding-20"></div>
+        <center>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rbctzd9kW1A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_uzINOH9i-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Un2xYzvAqhw?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </center>
+
+        <div align="right">
+	        <button onclick="window.location.href = 'videos.html';" class="more">
+	        	more videos
+	        </button>
+	    </div>
+    </div>
+
+    <!-- Photos -->
+
+    <div class="photos_img"></div>
+    <div id="photos_label"> </div>
+
+    <h1 class="tape">
+  		<img src="imgs/photos_label.png" class="image2"> 
+  	</h1>
+
+  	<div class="text_container_shadow">
+  		<div class="padding-20"></div>
+  		<div class="padding-20"></div>
+
+    	<center>
+	        <div class="row">
+	            <div class="column">
+	                <img src="imgs/sonny_sunglasses.jpg" class="news_image">
+	            </div>
+	            <div class="column">
+	                <img src="imgs/sonny_gnome.jpg" class="news_image">
+	            </div>
+	        </div>
+
+	        <div class="row">
+	            <div class="column">
+	                <img src="imgs/sonny_shopping.png" class="news_image">
+	            </div>
+	            <div class="column">
+	                <img src="imgs/sonny_sunsets_group.png" class="news_image">
+	            </div>
+	        </div>
+
+	        <div class="row">
+	            <div class="column">
+	                <img src="imgs/sonny_site.png" class="news_image">
+	            </div>
+    	        <div class="column">
+	                <img src="imgs/jaminthevan.png" class="news_image">
+	            </div>
+	        </div>
+	    </center>
+
+    	<div align="right">
+	    	<button onclick="window.location.href = 'photos.html';" class="more">
+	    	more photos
+	    	</button>
+		</div>
+
+    	<footer>
+        	<p>&copy; Copyright 2019</p>
+    	</footer>
+  	</div>
+
+    <script>
+        function myFunction() {
+
+            var x = document.getElementById("responsiveNav");
+
+            if (x.className === "mainNav") {
+                x.className += " responsive";
+            } else {
+
+                x.className = "mainNav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
